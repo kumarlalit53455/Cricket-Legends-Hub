@@ -1,0 +1,57 @@
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active');
+});
+
+// Close menu when a link is clicked (for mobile)
+const navLinkItems = document.querySelectorAll('.nav-links a');
+navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+    });
+});
+
+// Fan Story Form Submission
+const fanStoryForm = document.getElementById('fan-story-form');
+fanStoryForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const story = fanStoryForm.querySelector('textarea').value;
+    if(story.trim() !== "") {
+        // For demonstration, we'll just alert the story. 
+        // In a real application, you'd send this to a server.
+        alert('Thank you for submitting your story!');
+        fanStoryForm.reset();
+    }
+});
+
+// Vote Submission
+const voteButton = document.querySelector('.vote-section .btn');
+voteButton.addEventListener('click', () => {
+    const selectedVote = document.querySelector('input[name="vote"]:checked');
+    if(selectedVote) {
+        // For demonstration, we'll just alert the vote.
+        // In a real application, you'd send this to a server.
+        alert(`You voted for ${selectedVote.value}!`);
+    } else {
+        alert('Please select a player to vote for.');
+    }
+});
+
+// Smooth Scrolling for Navigation Links
+const navLinksAll = document.querySelectorAll('nav a');
+navLinksAll.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').slice(1);
+        const targetSection = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetSection.offsetTop - 70, // Adjust for fixed nav height
+            behavior: 'smooth'
+        });
+    });
+});

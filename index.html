@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXRNF9gGwJGp5m0C+zTq4pskkZ1xYb6+5YVb1tIQaMHSY/IcXWSSDF5v/0K+jx08CkbE1eDw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Cricket Legends Hub</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#players">Players</a></li>
+            <li><a href="#matches">Top Matches</a></li>
+            <li><a href="#fanzone">Fan Zone</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="intro">
+            <h1>Welcome to Cricket Legends Hub</h1>
+            <p>Your ultimate destination to explore the profiles and achievements of cricket's greatest stars.</p>
+            <a href="#players" class="btn">Explore Players</a>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section id="players" class="section players-section">
+        <h2>Featured Players</h2>
+        <div class="players-container">
+            <!-- Player 1 -->
+            <div class="player-card">
+                <img src="images/player1.webp" alt="Virat Kohli">
+                <h3>Virat Kohli</h3>
+                <p>Country: India</p>
+                <a href="#virat-profile" class="btn">View Profile</a>
+            </div>
+            <!-- Player 2 -->
+            <div class="player-card">
+                <img src="images/player2.webp" alt="Steve Smith">
+                <h3>Steve Smith</h3>
+                <p>Country: Australia</p>
+                <a href="#steve-profile" class="btn">View Profile</a>
+            </div>
+            <!-- Player 3 -->
+            <div class="player-card">
+                <img src="images/player3.webp" alt="Kane Williamson">
+                <h3>Kane Williamson</h3>
+                <p>Country: New Zealand</p>
+                <a href="#kane-profile" class="btn">View Profile</a>
+            </div>
+            <!-- Player 4 -->
+            <div class="player-card">
+                <img src="images/player4.webp" alt="Joe Root">
+                <h3>Joe Root</h3>
+                <p>Country: England</p>
+                <a href="#joe-profile" class="btn">View Profile</a>
+            </div>
+            <!-- Player 5 -->
+            <div class="player-card">
+                <img src="images/player5.webp" alt="Babar Azam">
+                <h3>Babar Azam</h3>
+                <p>Country: Pakistan</p>
+                <a href="#babar-profile" class="btn">View Profile</a>
+            </div>
+            <!-- Player 6 -->
+            <div class="player-card">
+                <img src="images/player6.webp" alt="Ben Stokes">
+                <h3>Ben Stokes</h3>
+                <p>Country: England</p>
+                <a href="#ben-profile" class="btn">View Profile</a>
+            </div>
+            <!-- Add more player cards as needed -->
+        </div>
+    </section>
+
+    <!-- Top Matches Section -->
+    <section id="matches" class="section matches-section">
+        <h2>Top Matches</h2>
+        <div class="matches-container">
+            <!-- Match 1 -->
+            <div class="match-card">
+                <h3>India vs Australia - 2021 T20 World Cup Final</h3>
+                <video controls>
+                    <source src="videos/India claim stunning series win, end Australia's Gabba streak _ Vodafone Test Series 2020-21.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>A thrilling finish where India clinched the title in the last over.</p>
+            </div>
+            <!-- Match 2 -->
+            <div class="match-card">
+                <h3>England vs New Zealand - 2019 World Cup Final</h3>
+                <video controls>
+                    <source src="videos/videoplayback.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Ben Stokes' heroic innings led England to their first-ever World Cup victory.</p>
+            </div>
+            <!-- Add more match cards as needed -->
+        </div>
+    </section>
+
+    <!-- Fan Zone Section -->
+    <section id="fanzone" class="section fanzone-section">
+        <h2>Fan Zone</h2>
+        <div class="fanzone-container">
+            <form id="fan-story-form">
+                <h3>Submit Your Favorite Player Story</h3>
+                <textarea placeholder="Share your story..." required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div class="vote-section">
+                <h3>Vote for the Greatest Players</h3>
+                <div class="vote-options">
+                    <!-- Player 1 Vote Option -->
+                    <div class="vote-option">
+                        <input type="radio" id="vote-virat" name="vote" value="Virat Kohli">
+                        <label for="vote-virat">Virat Kohli</label>
+                    </div>
+                    <!-- Player 2 Vote Option -->
+                    <div class="vote-option">
+                        <input type="radio" id="vote-steve" name="vote" value="Steve Smith">
+                        <label for="vote-steve">Steve Smith</label>
+                    </div>
+                    <!-- Player 3 Vote Option -->
+                    <div class="vote-option">
+                        <input type="radio" id="vote-kane" name="vote" value="Kane Williamson">
+                        <label for="vote-kane">Kane Williamson</label>
+                    </div>
+                    <!-- Player 4 Vote Option -->
+                    <div class="vote-option">
+                        <input type="radio" id="vote-joe" name="vote" value="Joe Root">
+                        <label for="vote-joe">Joe Root</label>
+                    </div>
+                    <!-- Player 5 Vote Option -->
+                    <div class="vote-option">
+                        <input type="radio" id="vote-babar" name="vote" value="Babar Azam">
+                        <label for="vote-babar">Babar Azam</label>
+                    </div>
+                    <!-- Player 6 Vote Option -->
+                    <div class="vote-option">
+                        <input type="radio" id="vote-ben" name="vote" value="Ben Stokes">
+                        <label for="vote-ben">Ben Stokes</label>
+                    </div>
+                    <!-- Add more vote options as needed -->
+                </div>
+                <button class="btn">Submit Vote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cricket Legends Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
